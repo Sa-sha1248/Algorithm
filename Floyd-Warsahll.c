@@ -10,7 +10,7 @@ typedef struct {
 	int weight[MAX_VERTICED][MAX_VERTICED];
 }GraphType;
 
-void print_distance(int distance[][10], int n) {
+void print_distance(int distance[][100], int n) {
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -29,7 +29,7 @@ void print_distance(int distance[][10], int n) {
 
 int Floyd_Warsahll(GraphType* g) {
 
-	int distance[10][10];
+	int distance[100][100];
 	for (int i = 0; i < g->n; i++)
 	{
 		for (int j = 0; j < g->n; j++)
